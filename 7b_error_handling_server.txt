@@ -8,11 +8,11 @@ def emo_detector():
     query = request.args.get("textToAnalyze")
     # Check if the query parameter 'textToAnalyze' is missing
     if query is None:
-        return "Invalid text! Please try again"
+        return {"message": "Query parameter 'textToAnalyze' is missing"}, 400
 
     # Check if the query parameter is present but invalid (empty or numeric)
     if query.strip() == "" or query.isdigit():
-        return "Invalid text! Please try again"
+        return {"message": "Invalid input parameter"}, 422
 
     result = emotion_detector(query)
     if result['dominant_emotion'] is None:
