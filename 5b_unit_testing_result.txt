@@ -1,0 +1,13 @@
+theia@theiadocker-udomese:/home/project/final_project/oaqjp-final-project-emb
+-ai$ python3.11 test_emotion_detection.py
+Initializing test runner...
+--> Test 2 Passed!
+.--> Test 3 Passed!
+.--> Test 5 Passed!
+.--> Test 1 Passed!
+.--> Test 4 Passed!
+.
+----------------------------------------------------------------------
+Ran 5 tests in 0.734s
+
+OK
